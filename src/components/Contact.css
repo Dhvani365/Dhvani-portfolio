@@ -47,4 +47,7 @@
     .footer-img-contact{
         display: none;
     }
+    .contact-form{
+        margin-left: 0%;
+    }
 }
