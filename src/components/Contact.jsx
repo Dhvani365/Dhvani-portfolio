@@ -67,7 +67,7 @@ const Contact = () => {
   return (
     <>
       <div
-        className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden contact-container`}
+        className={`xl:mt-12 grid xl:grid-cols-2 lg:pl-12 gap-10 overflow-hidden contact-container sm:grid sm:grid-cols-1 sm:mt-2`}
       >
         <motion.div
           variants={slideIn("left", "tween", 0.2, 1)}
@@ -128,7 +128,6 @@ const Contact = () => {
           variants={slideIn("right", "tween", 0.2, 1)}
           className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
         >
-          {/* <EarthCanvas /> */}
           <img src={FooterImg} className="footer-img-contact"/>
         </motion.div>
       </div>  

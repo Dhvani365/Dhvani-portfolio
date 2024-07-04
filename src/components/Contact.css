@@ -40,7 +40,7 @@
     height: 300px;
     width: 300px;
     margin-top: 40%;
-    margin-left: -10%;
+    margin-left: 5%;
     border-radius: 50%;
 }
 @media (max-width:768px) {
@@ -49,5 +49,35 @@
     }
     .contact-form{
         margin-left: 0%;
+        max-width: 50px;
+        max-height: 550px;
+        margin: 0;
+    }
+    .contact-form span{
+        font-size: 12px;
+    }
+    .contact-form input{
+        font-size: 12px;
+        max-width: 300px;
+    }
+    .contact-form textarea{
+        font-size: 12px;
+        max-width: 300px;
+    }
+    .contact-btn{
+        font-size: 10px;
+        height: 40px;
+        padding: 2px;
+    }
+    .copyright-text{
+        font-size: 10px;
+        padding-bottom: 0%;
+    }
+    .footer-img-contact{
+        display: block;
+        width: 30%;
+        height: 50%;
+        margin-top: -10%;
+        margin-left: 25%;
     }
 }

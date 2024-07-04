@@ -7,7 +7,10 @@
     height: 5%;
     width: 5%;
 }
-.social-media-btn:hover{
+.social-media-btn svg{
+    cursor: pointer;
+}
+.social-media-btn svg:hover{
     color: #dfd9ff;
 }
 .line-effect-hero{
