@@ -93,8 +93,8 @@ I'm a proactive <span className="text-theme">Full Stack Development</span> Enthu
               <div className="btn-bar">
                 <a
                   className="inline-block py-2 px-4 rounded-lg shadow-lg download-btn"
-                  href="/resume.png"
-                  download={CV}
+                  href="Dhvani_SDE_CV.pdf"
+                  download="Dhvani_SDE_CV.pdf"
                 >
                   Download CV
                 </a>
