@@ -45,7 +45,7 @@ const About = () => {
           <div className="my-3 image-section-abt">
             <div className="img-box">
               <img
-                alt="smiling a girl"
+                alt=""
                 src={DM_Logo}
                 loading="lazy"
                 width="900"
@@ -93,10 +93,10 @@ I'm a proactive <span className="text-theme">Full Stack Development</span> Enthu
               <div className="btn-bar">
                 <a
                   className="inline-block py-2 px-4 rounded-lg shadow-lg download-btn"
-                  href="Dhvani_SDE_CV.pdf"
+                  href="./Dhvani_SDE_CV.pdf"
                   download="Dhvani_SDE_CV.pdf"
                 >
-                  Download CV
+                  Download Resume
                 </a>
               </div>
             </div>
