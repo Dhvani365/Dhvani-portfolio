@@ -1,140 +1,71 @@
-import React, { useRef, useState } from "react";
-import { motion } from "framer-motion";
-import emailjs from "@emailjs/browser";
-
-import { styles } from "../styles";
+import React from "react";
+import { FaGithub, FaLinkedin, FaTelegram, FaEnvelope, FaStackOverflow } from "react-icons/fa";
 import { SectionWrapper } from "../hoc";
-import { slideIn } from "../utils/motion";
-import FooterImg from '../assets/footer-img.jpg';
-import './Contact.css';
+import "./Contact.css";
+
 const Contact = () => {
-  const formRef = useRef();
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  const [loading, setLoading] = useState(false);
-
-  const handleChange = (e) => {
-    const { target } = e;
-    const { name, value } = target;
-
-    setForm({
-      ...form,
-      [name]: value,
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setLoading(true);
-
-    emailjs
-      .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-        {
-          from_name: form.name,
-          to_name: "Dhvani Maktuporia",
-          from_email: form.email,
-          to_email: "dhvani365@gmail.com",
-          message: form.message,
-        },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-      )
-      .then(
-        () => {
-          setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
-
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
-        },
-        (error) => {
-          setLoading(false);
-          console.error(error);
-
-          alert("Ahh, something went wrong. Please try again.");
-        }
-      );
-  };
-
   return (
-    <>
-      <div
-        className={`xl:mt-12 grid xl:grid-cols-2 lg:pl-12 gap-10 overflow-hidden contact-container sm:grid sm:grid-cols-1 sm:mt-2`}
-      >
-        <motion.div
-          variants={slideIn("left", "tween", 0.2, 1)}
-          className='flex-[0.75] p-8 rounded-2xl contact-form'
-        >
-          <p className={styles.sectionSubText}>Get in touch</p>
-          <h3 className={styles.sectionHeadText}>Contact.</h3>
+    <section className="relative contact-info-section py-16 px-6 sm:px-12 overflow-hidden">
+      {/* Animated Gradient Glow */}
+      <div className="absolute inset-0 bg-gradient-to-br from-indigo-600/20 via-purple-600/10 to-pink-600/20 blur-3xl animate-pulse-slow"></div>
 
-          <form
-            ref={formRef}
-            onSubmit={handleSubmit}
-            className='mt-3 flex flex-col gap-8'
+      <div className="relative z-10 max-w-3xl mx-auto text-center text-white">
+        <h2 className="text-3xl sm:text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400">
+          Contact Information
+        </h2>
+        <p className="text-gray-300 mb-6">
+          You can reach me via email or connect on social media platforms.
+        </p>
+
+        {/* Social Icons */}
+        <div className="flex justify-center gap-6 text-3xl sm:text-4xl mb-6 text-gray-300">
+          <a
+            href="https://github.com/Dhvani365"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-[#dfd9ff] transition-transform hover:-translate-y-1"
           >
-            <label className='flex flex-col'>
-              <span className='text-white font-medium mb-4'>Enter Your Name</span>
-              <input
-                type='text'
-                name='name'
-                value={form.name}
-                onChange={handleChange}
-                placeholder="What's your good name?"
-                className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
-              />
-            </label>
-            <label className='flex flex-col'>
-              <span className='text-white font-medium mb-4'>Enter Your EmailID</span>
-              <input
-                type='email'
-                name='email'
-                value={form.email}
-                onChange={handleChange}
-                placeholder="What's your web address?"
-                className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
-              />
-            </label>
-            <label className='flex flex-col'>
-              <span className='text-white font-medium mb-4'>Enter Your Message</span>
-              <textarea
-                rows={3}
-                name='message'
-                value={form.message}
-                onChange={handleChange}
-                placeholder='What you want to say?'
-                className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
-              />
-            </label>
+            <FaGithub />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/dhvani-maktuporia-326565222/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-[#dfd9ff] transition-transform hover:-translate-y-1"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            href="https://t.me"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-[#dfd9ff] transition-transform hover:-translate-y-1"
+          >
+            <FaTelegram />
+          </a>
+          <a
+            href="mailto:dhvani.sde@gmail.com"
+            className="hover:text-[#dfd9ff] transition-transform hover:-translate-y-1"
+          >
+            <FaEnvelope />
+          </a>
+          <a
+            href="https://stackexchange.com/users/44375257/dhvani-maktuporia"
+            className="hover:text-[#dfd9ff] transition-transform hover:-translate-y-1"
+          >
+            <FaStackOverflow />
+          </a>
+        </div>
 
-            <button
-              type='submit'
-              className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary contact-btn'
-            >
-              {loading ? "Sending..." : "Send Response"}
-            </button>
-          </form>
-        </motion.div>
+        {/* Email */}
+        <p className="text-gray-400">Email: dhvani.sde@gmail.com</p>
+      </div>
 
-        <motion.div
-          variants={slideIn("right", "tween", 0.2, 1)}
-          className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
-        >
-          <img src={FooterImg} className="footer-img-contact"/>
-        </motion.div>
-      </div>  
-      <div className="container-fluid footer-bottom" >
-      <p className='copyright-text'>Copyright © Dhvani Maktuporia</p>
-    </div>  
-  </>
+      {/* Footer */}
+      <div className="text-center text-gray-400 text-sm mt-12 border-t border-white/10 pt-4 relative z-10">
+        © {new Date().getFullYear()} Dhvani Maktuporia. All Rights Reserved.
+      </div>
+    </section>
   );
 };
 

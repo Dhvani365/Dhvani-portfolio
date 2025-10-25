@@ -1,41 +1,35 @@
-import React from 'react';
 import DM_Logo from '../assets/My_image.jpeg';
-import CV from '../assets/Dhvani_SDE_CV.pdf';
-import { Tilt } from 'react-tilt';
-import { motion } from "framer-motion";
-import { services } from "../constants";
-import { fadeIn } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
 
 import './About.css';
 
-const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className='xs:w-[250px] w-full'>
-    <motion.div
-      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
-    >
-      <div
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
-      >
-        <img
-          src={icon}
-          alt='web-development'
-          className='w-16 h-16 object-contain'
-        />
+// const ServiceCard = ({ index, title, icon }) => (
+//   <Tilt className='xs:w-[250px] w-full'>
+//     <motion.div
+//       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
+//       className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
+//     >
+//       <div
+//         options={{
+//           max: 45,
+//           scale: 1,
+//           speed: 450,
+//         }}
+//         className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
+//       >
+//         <img
+//           src={icon}
+//           alt='web-development'
+//           className='w-16 h-16 object-contain'
+//         />
 
-        <h3 className='text-white text-[20px] font-bold text-center'>
-          {title}
-        </h3>
-      </div>
-    </motion.div>
-  </Tilt>
-);
+//         <h3 className='text-white text-[20px] font-bold text-center'>
+//           {title}
+//         </h3>
+//       </div>
+//     </motion.div>
+//   </Tilt>
+// );
 
 const About = () => {
   return (
@@ -60,15 +54,14 @@ const About = () => {
             <div className="typo-box about-me">
               <h3 className="text-3xl font-bold mb-2">Dhvani Maktuporia</h3>
               <h5 className="text-lg mb-4">
-                An <span className="text-theme">🚀 Aspiring Software Engineer</span> based in{' '}
-                <span className="text-theme">India</span>
+                An <span className="text-theme">🚀 Aspiring Software Engineer</span> 
               </h5>
-              <p className="mb-4 description-text">
+              <p className="mb-12 description-text">
 Welcome to my Portfolio Website! 👋 <br/><br/>
 
-I'm a proactive <span className="text-theme">Full Stack Development</span> Enthusiast. With a keen interest in coding and problem-solving, I am dedicated to exploring the realms of web development, AI/ML, and cloud computing. My journey into technology has been shaped by hands-on experience with HTML, CSS, JavaScript, and frameworks like ReactJS, alongside database management in SQL and NoSQL environments. Currently expanding my skills with Next.js, I thrive on creating innovative solutions and am eager to contribute my expertise to impactful projects.
+I'm a proactive <span className="text-theme">Full Stack Development</span> Enthusiast. With a keen interest in coding and problem-solving, I am dedicated to exploring the realms of web development, AI/ML, and cloud computing. My journey into technology has been shaped by hands-on experience with HTML, CSS, JavaScript, and frameworks like ReactJS, alongside database management in SQL and NoSQL environments. Currently expanding my skills with Next.js, I thrive on creating innovative solutions and am eager to contribute my expertise to impactful and open-source projects.
               </p>
-              <div className="grid grid-cols-1 gap-4 mb-4 grid-container">
+              {/* <div className="grid grid-cols-1 gap-4 mb-4 grid-container">
                 <div className="media">
                   <span className="font-medium text-theme">E-mail 👩‍💻| </span>
                   dhvanimaktuporia@gmail.com 
@@ -89,10 +82,10 @@ I'm a proactive <span className="text-theme">Full Stack Development</span> Enthu
                   <span className="font-medium text-theme">Freelance 💼| </span>
                   Available 
                 </div>
-              </div>
+              </div> */}
               <div className="btn-bar">
                 <a
-                  className="inline-block py-2 px-4 rounded-lg shadow-lg download-btn"
+                  className="bg-[#915eff] text-white font-semibold rounded-xl shadow-lg hover:bg-[#7b4fff] transition download-btn"
                   href="./Dhvani_SDE_CV.pdf"
                   download="Dhvani_SDE_CV.pdf"
                 >
@@ -104,13 +97,13 @@ I'm a proactive <span className="text-theme">Full Stack Development</span> Enthu
         </div>
       </div>
 
-      <div className='about-card-container'>
+      {/* <div className='about-card-container'>
         <div className='mt-1 lg:ml-20 about-card flex gap-10 sm:ml-5'>
           {services.map((service, index) => (
             <ServiceCard key={service.title} index={index} {...service} />
           ))}
         </div>
-      </div>
+      </div> */}
     </section>
   )
 }

@@ -14,18 +14,26 @@ import {
     mongodb,
     git,
     figma,
-    logo3,
-    logo,
-    logo2,
-    logo4,
-    project1,
-    project2,
-    project3,
-    project4,
-    project5,
     threejs,
   } from "../assets";
   
+  import logo from "../assets/logo.png";
+  import logo3 from "../assets/logo3.png";
+  import logo4 from "../assets/logo4.jpeg";  
+  import logo5 from "../assets/logo5.png";
+  import logo6 from "../assets/logo6.jpeg";
+  import logo7 from "../assets/logo7.png";
+  import logo8 from "../assets/logo8.png";
+  import project1 from "../assets/Project1.png";
+  import project2 from "../assets/Project2.jpeg";
+  import project3 from "../assets/Project3.jpeg";
+  import project4 from "../assets/Project4.jpeg";
+  import project5 from "../assets/Project5.png";
+  import project6 from "../assets/project6.png";
+  import project7 from "../assets/project7.png";
+  import project8 from "../assets/project8.jpeg";
+  import project9 from "../assets/project9.png";
+
   export const navLinks = [
     {
       id: "home",
@@ -119,98 +127,149 @@ import {
     }
   ];
   
+  const achievements = [
+    {
+      title: "Odoo Hackathon 2022",
+      organization: "Odoo",
+      iconBg: "#E6DEDD",
+      date: "Aug 2025 - Aug 2025",
+      description:
+        "Developed Quora Clone: A dynamic question-answer platform."
+    },
+    {
+      title: "GlaucoGuard - IOP Monitoring for Glaucoma",
+      organization: "Student Startup & Innovation Policy (SSIP)",
+      iconBg: "#383E56",
+      date: "Jan 2025 - Sep 2025",
+      description:
+        "SSIP-funded healthcare innovation for non-invasive intraocular pressure (IOP) monitoring to assist early glaucoma detection using AI and IoT-based integration.",
+      highlights: [
+        "Developed AI-assisted estimation model using physiological and MEMS sensor features.",
+        "Designed real-time monitoring dashboard for continuous patient observation.",
+        "Recognized under SSIP Funding for innovation in medical technology.",
+      ],
+    },
+    {
+      title: "Research Publications",
+      organization: "Multiple Conferences & Journals",
+      iconBg: "#E6DEDD",
+      date: "2023 - 2025",
+      description: "Authored and co-authored several research papers in the domains of Blockchain, Healthcare IoT, and Medical Image Processing.",
+      highlights: [
+        "BQPD - Paper Leakage Prevention via Blockchain",
+        "ElderGuardian - Healthcare for Elderly (IoT Solution)",
+        "Ultrasound Image Enhancement using ESRGAN",
+        "Transformer-driven framework for Mitosis Detection and Classification in Whole Slide Images",
+      ],
+    },
+    {
+      title: "Open Source Contributions",
+      organization: "GitHub",
+      iconBg: "#383E56",
+      date: "2024 - Present",
+      description:
+        "Contributed to multiple open-source projects by enhancing UI/UX, resolving bugs, and improving documentation across popular repositories.",
+      highlights: [
+        "🟢 Chakra UI: [PR #10403](https://github.com/chakra-ui/chakra-ui/pull/10403)",
+        "🟢 React Hook Form: [Issue #13102 (Closed)](https://github.com/react-hook-form/react-hook-form/issues/13102)",
+        "🟢 ShadCN UI: [PR #8538](https://github.com/shadcn-ui/ui/pull/8538)",
+        "🟢 JavaScript Algorithms: [PR #2082](https://github.com/trekhleb/javascript-algorithms/pull/2082)",
+        "🟢 Koodo Reader: [PR #1550 (Merged)](https://github.com/koodo-reader/koodo-reader/pull/1550)",
+        "🟢 Axios: [PR #7174 (Closed)](https://github.com/axios/axios/pull/7174), [PR #7175 (Merged)](https://github.com/axios/axios/pull/7175)",
+        "🟢 WooCommerce: [PR #61593](https://github.com/woocommerce/woocommerce/pull/61593), [Issue #61595](https://github.com/woocommerce/woocommerce/issues/61595)",
+      ],
+    },
+  ];
+
   const experiences = [
     {
-      title: "Full Stack Development Intern",
-      company_name: "Sattvabit",
-      icon: logo,
+      title: "Summer Intern",
+      company_name: "Physical Research Laboratory (ISRO, DOS)",
+      icon: logo7,
       iconBg: "#E6DEDD",
-      date: "Nov 2024 - Present",
+      date: "May 2025 - July 2025",
       points: [
-        "Developing Web Applications React JS, Next JS and Typescript.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Worked on control algorithm development for embedded systems and automation.",
+        "Developed and simulated models using MATLAB and Simulink for system control validation.",
+        "Utilized Verilog for FPGA-based implementation and testing of control logic.",
+        "Skills: MATLAB, Simulink, FPGA, Verilog, Control Systems.",
       ],
     },
     {
-      title: "Software Development Intern",
+      title: "Web Master | Graphics Team",
+      company_name: "IEEE SCET",
+      icon: logo8,
+      iconBg: "#383E56",
+      date: "May 2025 - Present",
+      points: [
+        "Developing the official SAMPARK 2025 Event and IEEE SCET Student Branch websites.",
+        "Collaborating with graphic designers and event coordinators to create engaging and user-friendly web interfaces.",
+        "Ensuring cross-browser compatibility and responsive layouts for all devices.",
+      ],
+    },
+    {
+      title: "Software Developer | Industry Project",
+      company_name: "Girnar Fashion",
+      icon: logo,
+      iconBg: "#E6DEDD",
+      date: "Feb 2025 - Apr 2025",
+      points: [
+        "Developed and deployed a custom billing and admin panel software for a textile enterprise.",
+        "Improved bill generation speed by 90% and optimized backend database queries.",
+        "Skills: ReactJS, Node.js, Express.js, MongoDB, TailwindCSS, ShadCN UI.",
+      ],
+    },
+    {
+      title: "Full Stack Intern",
+      company_name: "Sattvabit",
+      icon: logo5,
+      iconBg: "#383E56",
+      date: "Nov 2024 - Jan 2025",
+      points: [
+        "Enhanced existing web application features using Next.js and Nest.js.",
+        "Fixed critical bugs and improved SEO performance of deployed products.",
+        "Collaborated with team members to improve product stability and maintainability.",
+        "Skills: ReactJS, Next.js, Nest.js, SEO Optimization, Problem Solving.",
+      ],
+    },
+    {
+      title: "Front-End Developer",
+      company_name: "GirlScript Summer of Code (GSSoC)",
+      icon: logo6,
+      iconBg: "#E6DEDD",
+      date: "Oct 2024 - Nov 2024",
+      points: [
+        "Contributed to multiple open-source projects by resolving UI/UX issues.",
+        "Enhanced website responsiveness and accessibility for diverse screen sizes.",
+        "Skills: HTML, CSS, JavaScript, ReactJS, GitHub, Responsive Design.",
+      ],
+    },
+    {
+      title: "Software Engineer Intern",
       company_name: "GrapplTech",
       icon: logo4,
-      iconBg: "#E6DEDD",
+      iconBg: "#383E56",
       date: "June 2024 - July 2024",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Implementing responsive design and ensuring cross-browser compatibility."
+        "Developed and optimized the front-end of web applications using ReactJS.",
+        "Enhanced UI performance and user engagement by improving responsiveness and loading time.",
+        "Skills: ReactJS, TailwindCSS, Documentation, UI Optimization.",
       ],
     },
     {
-      title: "Portfolio Website",      
-      company_name: "June 2024 - July 2024",
-      icon: logo,
-      iconBg: "#383E56",
-      date: "",
-      points: [
-        "Developed My Portfolio Website .",
-        "As a passionate Computer Engineering student with a keen interest in full-stack development, I designed and developed a comprehensive portfolio website showcasing my educational background, projects, experiences, and skills.",
-        "This project was aimed at demonstrating both my technical abilities and creative design skills in web development.",
-        "Technologies: React.js, ViteJS, Three.js, Tailwind CSS, EmailJS",
-      ],
-    },
-    {
-      title: "Ecommerce Shopping Website UI",      
-      company_name: "Nov 2023 - Jan 2024",
-      icon: logo2,
-      iconBg: "#E6DEDD",
-      date: "",
-      points: [
-        "Developed UI of shopping ecommerce website using React + ViteJS.",
-        "Add to Cart Functionality, Creating Custom hooks, Route management using React Router DOM.",
-        "Implemented state management and various inbuilt hooks of React and developed various re-usable components.",
-        "Technologies: ReactJS, Vite, TailwindCSS",
-      ],
-    },
-    {
-      title: "Pratibhav",
-      company_name: "Jan 2022 - Jan 2023",
+      title: "SSIP Hackathon 2022 Project",
+      company_name: "Gujarat Police",
       icon: logo3,
-      iconBg: "#383E56",
-      date: "",
+      iconBg: "#E6DEDD",
+      date: "Aug 2022 - Jan 2023",
       points: [
-        "QR code based Citizen Feedback System for Gujarat Police.",
-        "Participated in the SSIP Hackathon'22 and developed a complete solution in the form of a Dynamic Website.",
-        "Key features: OTP generation & verification using Javascript & SMTP mailer, Integrated with MySQL database, Secure and Faste.",
-        "Technologies: HTML, CSS, PHP, Bootstrap, Javascript, MySQL",
+        "Developed 'Pratibhav' — a QR Code-based Citizen Feedback System.",
+        "Designed and deployed a dynamic website integrated with MySQL database and SMTP-based OTP verification.",
+        "Skills: HTML, CSS, PHP, Bootstrap, JavaScript, MySQL.",
       ],
     },
   ];
-  
-  const testimonials = [
-    {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
-  ];
+
   
   const projects = [
     {
@@ -218,39 +277,21 @@ import {
       description:
         "As a passionate Computer Engineering student with a keen interest in full-stack development, I designed and developed a comprehensive portfolio website showcasing my educational background, projects, experiences, and skills. This project was aimed at demonstrating both my technical abilities and creative design skills in web development.",
       tags: [
-        {
-          name: "React.JS",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "Three.JS",
-          color: "green-text-gradient",
-        },
-        {
-          name: "Tailwind-CSS",
-          color: "pink-text-gradient",
-        },
+        { name: "React.JS", color: "blue-text-gradient" },
+        { name: "Three.JS", color: "green-text-gradient" },
+        { name: "Tailwind-CSS", color: "pink-text-gradient" },
       ],
       image: project1,
-      source_code_link: "https://github.com/Dhvani365/AspireNexTasks",
+      source_code_link: "https://dhvani365.github.io/Dhvani-portfolio",
     },
     {
       name: "Tic Tac Toe",
       description:
         "Developed an interactive Tic Tac Toe game using React to demonstrate advanced problem-solving abilities and front-end design skills. Implemented state management to handle game logic, including player turns, win conditions, and draw scenarios. Enabled dynamic game play with real-time updates and immediate feedback for user actions.",
       tags: [
-        {
-          name: "ReactJS",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "Tailwind CSS",
-          color: "green-text-gradient",
-        },
-        {
-          name: "Vite",
-          color: "pink-text-gradient",
-        },
+        { name: "ReactJS", color: "blue-text-gradient" },
+        { name: "Tailwind CSS", color: "green-text-gradient" },
+        { name: "Vite", color: "pink-text-gradient" },
       ],
       image: project4,
       source_code_link: "https://github.com/Dhvani365/React_Projects/tree/main/tictactoe",
@@ -258,66 +299,90 @@ import {
     {
       name: "Sudoku Solver",
       description:
-        "Developed an advanced Sudoku Solver game using React to showcase problem-solving abilities and logic-building skills. Employed React for a component-based architecture, facilitating a modular and scalable codebase. Designed an intuitive and responsive user interface with CSS, Integrated a robust algorithm to solve Sudoku puzzles efficiently.",
+        "Developed an advanced Sudoku Solver game using React to showcase problem-solving abilities and logic-building skills. Employed React for a component-based architecture, facilitating a modular and scalable codebase. Designed an intuitive and responsive user interface with CSS, integrated a robust algorithm to solve Sudoku puzzles efficiently.",
       tags: [
-        {
-          name: "ReactJS",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "Vite",
-          color: "green-text-gradient",
-        },
-        {
-          name: "TailwindCSS",
-          color: "pink-text-gradient",
-        },
+        { name: "ReactJS", color: "blue-text-gradient" },
+        { name: "Vite", color: "green-text-gradient" },
+        { name: "TailwindCSS", color: "pink-text-gradient" },
       ],
       image: project5,
       source_code_link: "https://github.com/Dhvani365/React_Projects/tree/main/sudoku-solver",
     },
     {
-        name: "An Ecommerce Shopping Website UI",
-        description:
-          "Developed UI of shopping ecommerce website using React + ViteJS. Add to Cart Functionality, Creating Custom hooks, Route management using React Router DOM. Implemented state management and various inbuilt hooks of React and developed various re-usable components.",
-        tags: [
-          {
-            name: "ReactJS",
-            color: "blue-text-gradient",
-          },
-          {
-            name: "React-Router-DOM",
-            color: "green-text-gradient",
-          },
-          {
-            name: "TailwindCSS",
-            color: "pink-text-gradient",
-          },
-        ],
-        image: project2,
-        source_code_link: "https://github.com/Dhvani365/React_Projects/tree/main/ecommerce-website",
-      },
-      {
-        name: "Pratibhav: QR based Feedback System",
-        description:
-          "The user is provided with QR code by scanning which he/she can fill out the feedback form. There is an admin and officers panel showing filterable summery of all the feedbacks in the form of pie charts and tables. Key features: OTP generation & verification using Javascript & SMTP mailer, Integrated with MySQL database",
-        tags: [
-          {
-            name: "HTML5, CSS3(Bootstrap), Javascript",
-            color: "blue-text-gradient",
-          },
-          {
-            name: "PHP",
-            color: "green-text-gradient",
-          },
-          {
-            name: "MySQL",
-            color: "pink-text-gradient",
-          },
-        ],
-        image: project3,
-        source_code_link: "https://github.com/Dhvani365/QRBasedFeedbackSystem",
-      },
+      name: "An Ecommerce Shopping Website UI",
+      description:
+        "Developed UI of shopping ecommerce website using React + ViteJS. Add to Cart Functionality, Creating Custom hooks, Route management using React Router DOM. Implemented state management and various inbuilt hooks of React and developed various re-usable components.",
+      tags: [
+        { name: "ReactJS", color: "blue-text-gradient" },
+        { name: "React-Router-DOM", color: "green-text-gradient" },
+        { name: "TailwindCSS", color: "pink-text-gradient" },
+      ],
+      image: project2,
+      source_code_link: "https://github.com/Dhvani365/React_Projects/tree/main/ecommerce-website",
+    },
+    {
+      name: "Pratibhav: QR based Feedback System",
+      description:
+        "QR code-based citizen feedback system for Gujarat Police developed during SSIP Hackathon 2022. It features OTP generation & verification using JavaScript and SMTP mailer, integrated with MySQL database and admin dashboard for data visualization.",
+      tags: [
+        { name: "HTML5, CSS3(Bootstrap), Javascript", color: "blue-text-gradient" },
+        { name: "PHP", color: "green-text-gradient" },
+        { name: "MySQL", color: "pink-text-gradient" },
+      ],
+      image: project3,
+      source_code_link: "https://github.com/Dhvani365/QRBasedFeedbackSystem",
+    },
+    {
+      name: "Admin Panel & Billing System with Redux",
+      description:
+        "Developed and deployed an admin panel and billing management system for a textile business. Improved invoice generation speed and reliability through optimized Redux state management and efficient MongoDB data operations.",
+      tags: [
+        { name: "ReactJS", color: "blue-text-gradient" },
+        { name: "Redux", color: "green-text-gradient" },
+        { name: "MongoDB", color: "pink-text-gradient" },
+        { name: "TailwindCSS", color: "orange-text-gradient" },
+      ],
+      image: project6,
+      source_code_link: "https://github.com/Dhvani365/TMC_Billing_System",
+    },
+    {
+      name: "React Task Management System with Chatbox",
+      description:
+        "Created a dynamic task management system with integrated chat functionality, improving communication and task efficiency by 50%. Implemented CRUD operations and WebSocket-based real-time messaging.",
+      tags: [
+        { name: "ReactJS", color: "blue-text-gradient" },
+        { name: "Redux", color: "green-text-gradient" },
+        { name: "MongoDB", color: "pink-text-gradient" },
+        { name: "TailwindCSS", color: "orange-text-gradient" },
+      ],
+      image: project7,
+      source_code_link: "https://github.com/Dhvani365/taskmanager_tmc",
+    },
+    {
+      name: "Restaurant Reservation System",
+      description:
+        "Developed a restaurant reservation platform enabling real-time table booking and management. Improved reservation efficiency by 25% through intuitive UI and streamlined data handling.",
+      tags: [
+        { name: "ReactJS", color: "blue-text-gradient" },
+        { name: "Web Development", color: "green-text-gradient" },
+        { name: "Problem Solving", color: "pink-text-gradient" },
+      ],
+      image: project8,
+      source_code_link: "https://github.com/Dhvani365/Restaurant_Reservation",
+    },
+    {
+      name: "Automated Email Alert System",
+      description:
+        "Built an automated email alert system using Python and Flask that reduced missed deadlines by 30%. Integrated task scheduling and image-based analysis with API-triggered alerts.",
+      tags: [
+        { name: "Python", color: "blue-text-gradient" },
+        { name: "Flask", color: "green-text-gradient" },
+        { name: "Automation", color: "pink-text-gradient" },
+      ],
+      image: project9,
+      source_code_link: "https://github.com/MeetJariwala10/Automated-Mail-System",
+    },
   ];
+
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, experiences, projects, achievements };

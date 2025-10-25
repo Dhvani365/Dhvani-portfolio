@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import { Navbar, Hero, About, Experience, Tech, Works, Contact, StarsCanvas } from './components'
+import { Navbar, Hero, About, Experience, Tech, Works, Contact, StarsCanvas, Achievements } from './components'
 
 function App() {
 
@@ -13,6 +13,7 @@ function App() {
           </div>
           <About/>
           <Experience/>
+          <Achievements/>
           <Tech/>
           <Works/>
           <div className='relative z-0'>

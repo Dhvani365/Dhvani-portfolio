@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import {useState} from 'react';
 import { Link } from 'react-router-dom';
 import { styles } from '../styles';
 import { navLinks } from '../constants';
@@ -19,7 +19,7 @@ const Navbar = () => {
             onClick={()=>{setActive(""); window.scrollTo(0,0)}}           
           >
             <img src={logo} alt="can not display logo" className='w-9 h-9 object-contain' style={{borderRadius: "50%"}}/>
-            <p className='text-white font-bold cursor-pointer'>Dhvani | <span className='sm:block hidden'>Maktuporia</span></p>
+            <p className='text-white font-bold cursor-pointer'>Dhvani <span className='sm:inline'>Maktuporia</span></p>
           </Link>
           {/* Nav Links  */}
           <ul className='list-none lg:gap-10 hidden sm:flex flex-row gap-10 md:flex flex-row gap-5'>
