@@ -173,7 +173,6 @@ import {
         "🟢 Chakra UI: [PR #10403](https://github.com/chakra-ui/chakra-ui/pull/10403)",
         "🟢 React Hook Form: [Issue #13102 (Closed)](https://github.com/react-hook-form/react-hook-form/issues/13102)",
         "🟢 ShadCN UI: [PR #8538](https://github.com/shadcn-ui/ui/pull/8538)",
-        "🟢 JavaScript Algorithms: [PR #2082](https://github.com/trekhleb/javascript-algorithms/pull/2082)",
         "🟢 Koodo Reader: [PR #1550 (Merged)](https://github.com/koodo-reader/koodo-reader/pull/1550)",
         "🟢 Axios: [PR #7174 (Closed)](https://github.com/axios/axios/pull/7174), [PR #7175 (Merged)](https://github.com/axios/axios/pull/7175)",
         "🟢 WooCommerce: [PR #61593](https://github.com/woocommerce/woocommerce/pull/61593), [Issue #61595](https://github.com/woocommerce/woocommerce/issues/61595)",
