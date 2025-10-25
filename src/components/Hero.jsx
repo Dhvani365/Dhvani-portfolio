@@ -24,7 +24,7 @@ const Hero = () => {
     return () => typed.destroy();
   }, []);
 
-  // ✨ Hover glow logic
+  // Hover glow logic
   useEffect(() => {
     const section = sectionRef.current;
 
@@ -88,7 +88,7 @@ const Hero = () => {
         initial={{ x: 80, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 1 }}
-        className="glass-box h-[70%] w-[94%] sm:h-[60%] sm:w-[60%] sm:mt-[50%] mt-[20%] p-[10%] lg:mt-[60px] md:mt-0 md:ml-16 md:p-12 rounded-2xl z-10 backdrop-blur-xl bg-white/5 border border-white/10 shadow-[0_0_60px_rgba(145,94,255,0.2)]"
+        className="glass-box sm:h-[60%] sm:w-[60%] sm:mt-[10%] md:w-[60%] md:h-[60%] md:mt-[6%] md:p-12 xl:h-[60%] xl:w-[60%] lg:h-[60%] lg:w-[60%] lg:mt-[6%] p-[10%] ml-5 rounded-2xl z-10 backdrop-blur-xl bg-white/5 border border-white/10 shadow-[0_0_60px_rgba(145,94,255,0.2)]"
       >
         <h1 className="text-5xl sm:text-sm md:text-6xl font-extrabold mb-3 bg-gradient-to-r from-[#915eff] to-[#b59dff] text-transparent bg-clip-text">
           Hi, I'm Dhvani

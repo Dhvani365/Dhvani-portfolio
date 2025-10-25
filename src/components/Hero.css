@@ -17,7 +17,7 @@
     color: #dfd9ff;
 } */
 
-/* === Gradient Glow Spot Styling === */
+/* Gradient Glow Spot Styling */
 .glow-spot {
   position: absolute;
   width: 120px;
@@ -54,13 +54,13 @@
 
 @keyframes gradientPulse {
   0% {
-    background: radial-gradient(circle at 30% 30%, #915eff 0%, #b09ee2 100%);
+    background: radial-gradient(circle at 30% 30%, #5303ff 0%, #e7c0f3 100%);
   }
   50% {
-    background: radial-gradient(circle at 70% 70%, #a583ff 0%, #b59dff 100%);
+    background: radial-gradient(circle at 70% 70%, #c4afff 0%, #27058d 100%);
   }
   100% {
-    background: radial-gradient(circle at 50% 50%, #915eff 0%, #a583ff 100%);
+    background: radial-gradient(circle at 50% 50%, #3804a7 0%, #ebc3f7 100%);
   }
 }
 

@@ -129,12 +129,20 @@ import {
   
   const achievements = [
     {
-      title: "Odoo Hackathon 2022",
-      organization: "Odoo",
-      iconBg: "#E6DEDD",
-      date: "Aug 2025 - Aug 2025",
+      title: "Open Source Contributions",
+      organization: "GitHub",
+      iconBg: "#383E56",
+      date: "2024 - Present",
       description:
-        "Developed Quora Clone: A dynamic question-answer platform."
+        "Contributed to multiple open-source projects by enhancing UI/UX, resolving bugs, and improving documentation across popular repositories.",
+      highlights: [
+        "🟢 Chakra UI: [PR #10403](https://github.com/chakra-ui/chakra-ui/pull/10403)",
+        "🟢 React Hook Form: [Issue #13102 (Closed)](https://github.com/react-hook-form/react-hook-form/issues/13102)",
+        "🟢 ShadCN UI: [PR #8538](https://github.com/shadcn-ui/ui/pull/8538)",
+        "🟢 Koodo Reader: [PR #1550 (Merged)](https://github.com/koodo-reader/koodo-reader/pull/1550)",
+        "🟢 Axios: [PR #7174 (Closed)](https://github.com/axios/axios/pull/7174), [PR #7175 (Merged)](https://github.com/axios/axios/pull/7175)",
+        "🟢 WooCommerce: [PR #61593](https://github.com/woocommerce/woocommerce/pull/61593), [Issue #61595](https://github.com/woocommerce/woocommerce/issues/61595)",
+      ],
     },
     {
       title: "GlaucoGuard - IOP Monitoring for Glaucoma",
@@ -161,23 +169,7 @@ import {
         "Ultrasound Image Enhancement using ESRGAN",
         "Transformer-driven framework for Mitosis Detection and Classification in Whole Slide Images",
       ],
-    },
-    {
-      title: "Open Source Contributions",
-      organization: "GitHub",
-      iconBg: "#383E56",
-      date: "2024 - Present",
-      description:
-        "Contributed to multiple open-source projects by enhancing UI/UX, resolving bugs, and improving documentation across popular repositories.",
-      highlights: [
-        "🟢 Chakra UI: [PR #10403](https://github.com/chakra-ui/chakra-ui/pull/10403)",
-        "🟢 React Hook Form: [Issue #13102 (Closed)](https://github.com/react-hook-form/react-hook-form/issues/13102)",
-        "🟢 ShadCN UI: [PR #8538](https://github.com/shadcn-ui/ui/pull/8538)",
-        "🟢 Koodo Reader: [PR #1550 (Merged)](https://github.com/koodo-reader/koodo-reader/pull/1550)",
-        "🟢 Axios: [PR #7174 (Closed)](https://github.com/axios/axios/pull/7174), [PR #7175 (Merged)](https://github.com/axios/axios/pull/7175)",
-        "🟢 WooCommerce: [PR #61593](https://github.com/woocommerce/woocommerce/pull/61593), [Issue #61595](https://github.com/woocommerce/woocommerce/issues/61595)",
-      ],
-    },
+    }
   ];
 
   const experiences = [
@@ -254,6 +246,16 @@ import {
         "Enhanced UI performance and user engagement by improving responsiveness and loading time.",
         "Skills: ReactJS, TailwindCSS, Documentation, UI Optimization.",
       ],
+    },
+    {
+      title: "Odoo Hackathon 2022",
+      company_name: "Odoo",
+      icon: logo,
+      iconBg: "#E6DEDD",
+      date: "Aug 2025 - Aug 2025",
+      points:[
+        "Developed Quora Clone: A dynamic question-answer platform."
+      ]
     },
     {
       title: "SSIP Hackathon 2022 Project",

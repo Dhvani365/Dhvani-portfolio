@@ -12,8 +12,8 @@ function App() {
               <Hero/>
           </div>
           <About/>
-          <Experience/>
           <Achievements/>
+          <Experience/>
           <Tech/>
           <Works/>
           <div className='relative z-0'>

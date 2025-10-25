@@ -36,12 +36,12 @@ const AchievementCard = ({ achievement, index }) => {
       <div
         className="flex justify-center items-center w-14 h-14 rounded-full shadow-lg z-10 flex-shrink-0"
         style={{
-          background: `linear-gradient(135deg, ${achievement.iconBg}, #6B5B95)`,
+          background: `linear-gradient(135deg, ${achievement?.iconBg}, #6B5B95)`,
           boxShadow: "0 0 20px rgba(255,255,255,0.15)",
         }}
       >
         <span className="text-white text-xl font-bold">
-          {achievement.title.charAt(0)}
+          {achievement.title?.charAt(0)}
         </span>
       </div>
 
@@ -51,20 +51,20 @@ const AchievementCard = ({ achievement, index }) => {
       {/* Card */}
       <div className="relative bg-gradient-to-br from-[#1d1836]/80 to-[#2A2740]/90 backdrop-blur-md border border-white/10 rounded-2xl p-6 w-full sm:w-[85%] hover:border-indigo-400/50 hover:shadow-[0_0_25px_rgba(99,102,241,0.3)] transition-all duration-300">
         <h3 className="text-[22px] font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400">
-          {achievement.title}
+          {achievement?.title}
         </h3>
         <p className="text-gray-300 text-sm font-medium mb-2">
-          {achievement.organization}
+          {achievement?.organization}
         </p>
-        <p className="text-indigo-300 text-[13px] mb-4">{achievement.date}</p>
+        <p className="text-indigo-300 text-[13px] mb-4">{achievement?.date}</p>
 
         <p className="text-gray-200 text-[15px] leading-relaxed mb-4">
-          {achievement.description}
+          {achievement?.description}
         </p>
 
         {achievement.highlights && (
           <ul className="list-disc ml-6 space-y-2">
-            {achievement.highlights.map((point, idx) => (
+            {achievement?.highlights?.map((point, idx) => (
               <li
                 key={idx}
                 className="text-gray-300 text-[14px] leading-relaxed"
