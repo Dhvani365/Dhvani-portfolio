@@ -1,6 +1,6 @@
 import DM_Logo from '../assets/My_image.jpeg';
 import { SectionWrapper } from "../hoc";
-
+import Dhvani_Resume from '../assets/Dhvani_React_Resume.pdf';
 import './About.css';
 
 // const ServiceCard = ({ index, title, icon }) => (
@@ -84,12 +84,10 @@ I'm a proactive <span className="text-theme">Full Stack Development</span> Enthu
                 </div>
               </div> */}
               <div className="btn-bar">
-                <a
-                  className="bg-[#915eff] text-white font-semibold rounded-xl shadow-lg hover:bg-[#7b4fff] transition download-btn"
-                  href="./Dhvani_SDE_CV.pdf"
-                  download="Dhvani_SDE_CV.pdf"
-                >
-                  Download Resume
+                <a href={Dhvani_Resume} download="Dhvani_SDE_CV.pdf" target='_blank'>
+                  <button className="bg-[#915eff] text-white font-semibold rounded-xl shadow-lg hover:bg-[#7b4fff] transition download-btn">
+                    Download Resume
+                  </button>
                 </a>
               </div>
             </div>
